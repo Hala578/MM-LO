@@ -124,26 +124,5 @@ Default output behavior:
 If `--save_intermediate` is enabled:
 - Intermediate diffusion step images are saved under `<save_dir>/steps/`
 
-## FAQ
-**Why are the training data not released?**
-
-This public package is intended for inference reproduction only, so it includes released weights, demo reference images, and inference code, but not the training data.
-
-**Why is `ema_0.9999_009000.pt` not the default release model?**
-
-It is a newer local experimental checkpoint in the original working repository, but it was not selected as the default public release model.
-
-**Why was `ema_0.9999_022500.pt` excluded?**
-
-It was identified as an abnormal / corrupted checkpoint during release cleanup.
-
-**Do I need MPI or multi-GPU setup?**
-
-No. This release supports direct single-process execution with `python scripts/ilvr_sample.py ...`.
-
-**What if inference is slow?**
-
-Please make sure that you installed a GPU-enabled PyTorch build and that CUDA is available. CPU inference will be much slower.
-
 ## License
 This release is distributed under the MIT License. See `LICENSE` for details.
