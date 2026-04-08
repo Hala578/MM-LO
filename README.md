@@ -1,33 +1,8 @@
 # MM-LO Release
 
 ## Overview
-This repository is a lightweight public release of our mmWave-guided ILVR + ADM inference pipeline. It only includes the files required for inference reproduction: the released checkpoint, a small set of demo reference images, the inference code, and step-by-step instructions.
+This repository is a lightweight public release of MM-LO. It includes the files required for inference reproduction: the released checkpoint, a small set of demo reference images, the inference code, and step-by-step instructions.
 
-This release does **not** include any training data.
-
-## What Is Included / Not Included
-Included:
-- Inference code: `scripts/ilvr_sample.py`, `scripts/resizer.py`, `scripts/guided_diffusion/`
-- Main released checkpoint: `checkpoints/ema_0.9999_028000.pt`
-- Six demo push reference categories:
-  - `ref_imgs/1/pushtarget40`
-  - `ref_imgs/1/pushtarget50`
-  - `ref_imgs/1/pushtarget60`
-  - `ref_imgs/1/pushtarget70`
-  - `ref_imgs/1/pushtarget80`
-  - `ref_imgs/1/pushtarget90`
-- Documentation and dependency list: `README.md`, `requirements.txt`, `LICENSE`
-
-Not included:
-- Training data
-- Optimizer states
-- Training outputs and intermediate experiment files
-- Unrelated MATLAB / WIFI / RFID / BVP assets
-- Additional local checkpoints that were not selected for this release
-
-Notes:
-- `scripts/data_save1/ema_0.9999_009000.pt` in the original working repository is a newer local experimental checkpoint, but it is **not** the default public release model.
-- `scripts/data_save1/ema_0.9999_022500.pt` was excluded because it is abnormal / corrupted.
 
 ## Directory Structure
 ```text
