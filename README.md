@@ -1,4 +1,4 @@
-# mmWave ILVR Inference Release
+# MM-LO Release
 
 ## Overview
 This repository is a lightweight public release of our mmWave-guided ILVR + ADM inference pipeline. It only includes the files required for inference reproduction: the released checkpoint, a small set of demo reference images, the inference code, and step-by-step instructions.
